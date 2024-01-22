@@ -1,0 +1,146 @@
+.properpag {
+  font-style: none;
+}
+
+#beginingImg {
+  position: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 0px;
+  padding: 0px;
+}
+
+
+#beginingImg img {
+  width: 100%;
+  height: 120px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+#headText {
+  position: absolute;
+  color: white;
+  -webkit-text-stroke: 2px black; /*Esto es para hacer lo de la linea de fuera de la palabra*/
+  width: 100%;
+  height: auto;
+  text-align: center;
+  margin:0px;
+  padding: 0px;
+}
+
+#ranks {
+  position: inherit;
+  list-style: inline;
+  position: block;
+  height: auto;
+  margin-bottom: 5px;
+  width: 100%;
+  display: flex;
+  padding:0px;
+}
+.RankLi {
+  position: inherit;
+  list-style-type: none;
+  text-align: center;
+  float: left;
+  width: 120px;
+  display: flex;
+}
+.rankimg {
+  height: auto;
+  width: 30px;
+}
+
+
+#materials {
+  width: fit-content;
+  position: inherit;
+  margin-top: 60px;
+  align-content: center;
+  width: 100%;
+  height: auto;
+}
+#materials caption {
+  font-size: 30px;
+  text-decoration: solid;
+
+}
+#materialstb {
+  text-align: center;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 4px solid black;
+  border-collapse: collapse;
+  position: inherit;
+  align-content: center;
+  
+}
+#materials td {
+  border: 1px solid black;
+}
+#materials tr {
+  border: 1px solid black;
+}
+
+.showMoreInfo{
+  display: none;
+}
+
+.showMoreInfo2 {
+  display: none;
+  list-style: none;
+}
+
+#howToGetIn {
+  list-style: none;
+  text-align: center;
+  width: 100%;
+  height: auto;
+  padding: 0px;
+}
+
+.center {
+  text-align: center;
+}
+
+.footImg {
+  width: 30px;
+  height: 30px;
+  display: inline;
+}
+#up{
+   align-items: right;
+}
+
+body {
+  height: auto;
+}
+
+section {
+  margin-top: 100px;
+  position: inherit;
+  width: 100%;
+  text-align: justify;
+  margin-left: 8px;
+  }
+
+footer {
+  text-align: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  padding: 0px;
+}
+
+h2 {
+  text-align: center;
+}
+
+p {
+  text-align: justify;
+  margin-left: 8px;
+}

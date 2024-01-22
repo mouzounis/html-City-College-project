@@ -1,0 +1,356 @@
+<!DOCTYPE html> <!--Marios-->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="nav.css">
+    <style>
+        h1 {
+            font-size: xx-large;
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+        }
+        table {
+            margin: auto;
+            padding-bottom: 15px;
+            z-index: 15;
+        }
+
+        table td {
+            font-weight: bold;
+            font-size: larger;
+        }
+
+        .popupp {
+            display: none;
+            z-index: 2;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .popupp>img {
+            animation: popup 1s;
+        }
+
+        @keyframes popup {
+            from {
+                height: 0;
+                width: 0;
+            }
+
+            to {
+                height: 60px;
+                width: 80px;
+            }
+        }
+
+        .hovver:hover>.popupp {
+            display: block;
+
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <img src="../Photos/purple_phoenix.png" alt=""
+            style="display: flex; position: absolute; height: 70px; margin-left: 20px; z-index: 1; ">
+        <ul class="menu">
+            <li><a>Homepage</a>
+            </li>
+            <li><a>Greece</a>
+                <ul class="submenu">
+                    <li><a href="Tsartsidis_Homepage.html">Homepage</a></li>
+                    <li><a href="Tsartsidis_AirForces.html">Airforce</a></li>
+                    <li><a href="Tsartsidis_Army.html">Army</a></li>
+                    <li><a href="Tsartsidis_Navy.html">Navy</a></li>
+                    <li><a href="Tsartsidis_Special%20Forces.html">Special Forces</a></li>
+                </ul>
+            </li>
+            <li>
+                <a>Bulgaria</a>
+                <ul class="submenu">
+                    <li><a href="Katrin_Homepage.html">Homepage</a></li>
+                    <li><a href="Katrin_Airforce.html">Airforce</a></li>
+                    <li><a href="Katrin_Army.html">Army</a></li>
+                    <li><a href="/Katrin_Navy.html">Navy</a></li>
+                    <li><a href="Katrin_Special_Forces.html">Special Forces</a></li>
+                </ul>
+            </li>
+            <li>
+                <a>Romania</a>
+                <ul class="submenu">
+                    <li><a href="Chindris_Homepage.html">Homepage</a></li>
+                    <li><a href="Chindris_Airforce.html">Airforce</a></li>
+                    <li><a href="Chindris_Army.html">Army</a></li>
+                    <li><a href="ChindrisNavy.html">Navy</a></li>
+                    <li><a href="Chindris_Special_Forces.html">Special Forces</a></li>
+                </ul>
+            </li>
+            <li>
+                <a>Spain</a>
+                <ul class="submenu">
+                    <li><a href="Urbina_HomePage.html">Homepage</a></li>
+                    <li><a href="Urbina_AirForce.html">Airforce</a></li>
+                    <li><a href="Urbina_Army.html">Army</a></li>
+                    <li><a href="Urbina_Navy.html">Navy</a></li>
+                    <li><a href="Urbina_Special_Forces.html">Special Forces</a></li>
+                </ul>
+            </li>
+            <li>
+                <a>NATO</a>
+                <ul class="submenu">
+                    <li><a href="Ouzounis_nato.html">Nato</a></li>
+                    <li><a href="Ouzounis_natoMembers.html">NATO  Members</a></li>
+                </ul>
+            </li>
+            <li>
+                <a>About Us</a>
+                <ul class="submenu">
+                    <li><a href="../Students/student-page.html">Homepage</a></li>
+                    <li><a href="../Students/Marios.html">Marios</a></li>
+                    <li><a href="../Students/Tsartsidis.html">Abraham</a></li>
+                    <li><a href="../Students/iulia.html">Iulia</a></li>
+                    <li><a href="../Students/ada.html">Ada</a></li>
+                    <li><a href="../Students/katrin.html">Katrin</a></li>
+                </ul>
+            </li>
+            <li><a href="" id="timer" style="text-decoration: none;"></a></li>
+        </ul>
+        <label class="switch" style="display: flex; position: absolute; right: 25px; top: 2  2px; z-index: 1;">
+            <input type="checkbox" onclick="darkmode()">
+            <span class="slider round"></span>
+        </label>
+    </nav>
+    <section>
+        <h1>The Members of the NATO</h1>
+        <h2> as of the end of 2023 are:</h2>
+        <table>
+            <tr>
+                <td class="hovver" id="Albania">
+                    Albania <br> 2009
+                    <p class="popupp"><img src="../Photos/Albania.png" width="80px" height="60px"></p>
+                </td>
+                <td class="hovver" id="">
+                    Belgium <br> 1949
+                    <p class="popupp"><img src="../Photos/Belgium.svg" width="80px" height="60"></p>
+                </td>
+                <td class="hovver" id="">
+                    Bulgaria <br> 2004
+                    <p class="popupp"><img src="../Photos/Bulgaria.png" width="80px" height="60"></p>
+                </td>
+                <td class="hovver" id="">
+                    Canada <br> 1949
+                    <p class="popupp"><img src="../Photos/Canada.png" width="80px" height="60"></p>
+                </td>
+                <td class="hovver" id="">
+                    Croatia <br> 2009
+                    <p class="popupp"><img src="../Photos/Croatia.svg" width="80px" height="60"></p>
+                </td>
+            </tr>
+            <tr>
+                <td class="hovver" id="">
+                    Czechia <br> 1999
+                    <p class="popupp"><img src="../Photos/Czechia.png" width="80px" height="60"></p>
+                </td>
+                <td class="hovver" id="">
+                    Denmark <br> 1949
+                    <p class="popupp"><img src="../Photos/Denmark.png" width="80px" height="60"></p>
+                </td>
+                <td class="hovver" id="">
+                    Estonia <br> 2004
+                    <p class="popupp"><img src="../Photos/Estonia.png" width="80px" height="60"></p>
+                </td>
+                <td class="hovver" id="">
+                    Finland <br> 2023
+                    <p class="popupp"><img src="../Photos/finland.png" width="80px" height="60"></p>
+                </td>
+                <td class="hovver" id="">
+                    France <br> 1949
+                    <p class="popupp"><img src="../Photos/france.png" width="80px" height="60"></p>
+                </td>
+            </tr>
+            <tr>
+                <td class="hovver" id="">
+                    Germany <br> 1955
+                    <p class="popupp"><img src="../Photos/Germany.png" width="80px" height="60"></p>
+                </td>
+                <td class="hovver" id="">
+                    Greece <br> 1952
+                    <p class="popupp"><img src="../Photos/greece.png" width="80px" height="60"></p>
+                </td>
+                <td class="hovver" id="">
+                    Hungary <br> 1999
+                    <p class="popupp"><img src="../Photos/Hungary.png" width="80px" height="60"></p>
+                </td>
+                <td class="hovver" id="">
+                    Iceland <br> 1949
+                    <p class="popupp"><img src="../Photos/Iceland.svg" width="80px" height="60"></p>
+                </td>
+                <td class="hovver" id="">
+                    Italy <br> 1949
+                    <p class="popupp"><img src="../Photos/italy.png" width="80px" height="60"></p>
+                </td>
+            </tr>
+            <tr>
+                <td class="hovver" id="">
+                    Latvia <br> 2004
+                    <p class="popupp"><img src="../Photos/latvia.svg" width="80px" height="60"></p>
+                </td>
+                <td class="hovver" id="">
+                    Romania <br> 2004
+                    <p class="popupp"><img src="../Photos/Romanian.png" width="80px" height="60"></p>
+                </td>
+                <td class="hovver" id="">
+                    Lithuania <br> 2004
+                    <p class="popupp"><img src="../Photos/lithuania.svg" width="80px" height="60"></p>
+                </td>
+                <td class="hovver" id="">
+                    Luxembourg <br> 1949
+                    <p class="popupp"><img src="../Photos/luxembourg.png" width="80px" height="60"></p>
+                </td>
+                <td class="hovver" id="">
+                    Montenegro <br> 2017
+                    <p class="popupp"><img src="../Photos/montenegro.png" width="80px" height="60"></p>
+                </td>
+            </tr>
+            <tr>
+                <td class="hovver" id="">
+                    Netherlands <br> 1949
+                    <p class="popupp"><img src="../Photos/netherlands.png" width="80px" height="60"></p>
+                </td>
+                <td class="hovver" id="">
+                    North Macedonia <br> 2020
+                    <p class="popupp"><img src="../Photos/northMacedonia.jpg" width="80px" height="60"></p>
+                </td>
+                <td class="hovver" id="">
+                    Norway <br> 1949
+                    <p class="popupp"><img src="../Photos/norway.png" width="80px" height="60"></p>
+                </td>
+                <td class="hovver" id="">
+                    Poland <br> 1999
+                    <p class="popupp"><img src="../Photos/poland.svg" width="80px" height="60"></p>
+                </td>
+                <td class="hovver" id="">
+                    Portugal <br> 1949
+                    <p class="popupp"><img src="../Photos/portugal.svg" width="80px" height="60"></p>
+                </td>
+            </tr>
+            <tr>
+                <td class="hovver" id="">
+                    Slovakia <br> 2004
+                    <p class="popupp"><img src="../Photos/slovakia.png" width="80px" height="60"></p>
+                </td>
+                <td class="hovver" id="">
+                    Slovenia <br> 2004
+                    <p class="popupp"><img src="../Photos/slovenia.svg" width="80px" height="60"></p>
+                </td>
+                <td class="hovver" id="">
+                    Spain <br> 1982
+                    <p class="popupp"><img src="../Photos/spain.png" width="80px" height="60"></p>
+                </td>
+                <td class="hovver" id="">
+                    United Kingdom <br> 1949
+                    <p class="popupp"><img src="../Photos/uk.svg" width="80px" height="60"></p>
+                </td>
+                <td class="hovver" id="">
+                    United States <br> 1949
+                    <p class="popupp"><img src="../Photos/usa.svg" width="80px" height="60"></p>
+                </td>
+
+            </tr>
+            <tr>
+                <td class="hovver" id="">
+                    Turkey <br> 1952
+                    <p class="popupp"><img src="../Photos/turkey.png" width="80px" height="60"></p>
+                </td>
+            </tr>
+        </table>
+
+    </section>
+    <footer>
+        <div class="bg">
+            <div class="container">
+                <div class="button">
+                    <p class="sub">Subscribe to our Military Newsletter</p>
+                    <input type="text" class="input-field" placeholder="Your E-Mail"><button class="input-field-button"
+                        onclick="subAlert()">Subscribe</button>
+                </div>
+                <div class="find-us">
+                    <p class="contact">Contact Us:</p>
+                    <a href=mailto:mouzounis@york.citycollege.eu><img class="footImg" src="Photos/mail.jpg"></a>
+                    <a href="https://www.instagram.com/zouzounakis_/" target="_blank"> <img class="footImg"
+                            src="Photos/Insta.jpg"></a>
+                    <a href="https://www.facebook.com/MariosToZouzouni/" target="_blank"> <img class="footImg"
+                            src="Photos/facebook.jpg"></a>
+                    <a href="tel:2310696969" class="phone-link">2310-696969</a>
+                </div>
+                <div class="google-map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2446.4555226051352!2d22.935449339229237!3d40.637853069454515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a839a74068237b%3A0x8cbda0f741adff70!2sCITY%20College%2C%20University%20of%20York%20Europe%20Campus!5e0!3m2!1sen!2sgr!4v1705257464549!5m2!1sen!2sgr"
+                        width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div class="bott">
+                <hr>
+                <h6 class="h6" style="text-align: left; margin-top: 0px;">© 2024 Purple Phoinex. CITY College,
+                    University of York Europe Campus, Thessaoliki,
+                    Greece.
+                    All Rights Reserved</h6>
+                <a href="html/terms-and-contitions.html">
+                    <h6 class="terms-and-contitions" style="padding-left: 20px;">Terms and Contitions</h6>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function subAlert() {
+            alert("Thanks for Subscribing to our Newsletter");
+        }
+        function darkmode() {
+
+            if (document.body.className.match('dark')) {
+                document.body.classList.remove("dark");
+
+            }
+            else {
+                document.body.classList.add("dark");
+            }
+        }
+        setInterval(myTimer, 1000);
+        function myTimer() {
+            const d = new Date();
+            document.getElementById("timer").innerHTML = d.toLocaleTimeString();
+        }
+
+        // function revial() {
+        //     var reveals = document.querySelectorAll(".reveal");
+        //     for (var i = 0; i < reveals.length; i++) {
+        //         var windowHeight = window.innerHeight;
+        //         var elementTop = reveals[i].getBoundingClientRect().top;
+        //         var elementVisible = 150;
+        //         if (elementTop < windowHeight - elementVisible) {
+        //             reveals[i].classList.add("active");
+        //         } else {
+        //             reveals[i].classList.remove("active");
+        //         }
+        //     }
+        // }
+        // window.addEventListener("scroll", revial);
+
+        // reveal();
+    </script>
+</body>
+
+</html>

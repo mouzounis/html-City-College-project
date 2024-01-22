@@ -1,0 +1,66 @@
+<!doctype html> <!--Marios-->
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="html/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    
+</head>
+
+<body>
+    <div class="banner">
+        <div class="navbar">
+            <img src="Photos/purple_phoenix.png" class="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="html/Tsartsidis_Homepage.html">Greece</a></li>
+                <li><a href="html/Katrin_Homepage.html">Bulgaria</a></li>
+                <li><a href="html/Chindris_Homepage.html">Romania</a></li>
+                <li><a href="html/Urbina_HomePage.html">Spain</a></li>
+                <li><a href="html/Ouzounis_nato.html">NATO</a></li>
+            </ul>
+        </div>
+        <div class="container">
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide"><img src="Photos/greekFlag.jpg"></div>
+                  <div class="swiper-slide"><img src="Photos/bulgarianFlag.png"></div>
+                  <div class="swiper-slide"><img src="Photos/romanianFlag.jpg"></div>
+                  <div class="swiper-slide"><img src="Photos/spanishFlag.png"></div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+              
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              
+              </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        const swiper = new Swiper('.swiper', {
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+                loop: true,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+    </script>
+</body>
+
+</html>
