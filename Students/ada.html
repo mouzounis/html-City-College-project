@@ -1,6 +1,4 @@
-<!DOCTYPE html> <!--Marios-->
-<html lang="en">
-
+<!DOCTYPE html> 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,7 +19,7 @@
         <img src="../Photos/purple_phoenix.png" alt=""
             style="display: flex; position: absolute; height: 70px; margin-left: 20px; z-index: 1; ">
         <ul class="menu">
-            <li><a href="">Homepage</a>
+            <li><a href="../index.html">Homepage</a>
             </li>
             <li><a>Greece</a>
                 <ul class="submenu">
@@ -94,11 +92,75 @@
             I'm from Spain and i have been living in Madrid, Arroyomolinos for the past 12 years before moving to
             Grecce, Thessaloniki, to start the digree of Computer Science in the University of York. </p>
 
+<article class="articleAboutMe">
+    <h2>Hobbies</h2>
+    <h3>Sports</h3>
+    <p>
+        I am a very active person, and since I was little I have been practicing sports. I started Karate when I was 3-4 until 6-5 years old, then in Madrid I could not find any karate School that had the same moral as the one in Asturias, so I swiched to
+        swimming and horse riding; swimming did not go very well and i just stayed for 3 years, but i keept doing horse riding for 12 years. In horse riding I did all the different disciplines. My last years riding horses were dedicated to <a href="https://youtu.be/ynoBpwhl2fQ?si=ijiRl0-Nvu_YR_68"> Horseball</a>; until my team ended wining the Horseball ChampionShip.
+        When I left Swimming i tried for one semester Climbing, but I did not like it; so i switched to Boxing the sport that now a days I actually keep doing.
+        Now a days apart from boxing; I also go to the gym
+    </p>
+    <div>
+    <ul style="list-style-type: none;">
+        <li>
+            <ul id="sports">
+                <li><img src="../Photos/horseball1.jpg"></li>
+                <li><div><video width="640" height="360" controls class="videos">
+                    <source src="../Photos/horseball3.mp4" type="video/mp4">
+                  </video></div></li>
+                <li><div><video width="auto" height="auto" controls class="videos"> 
+                    <source src="../Photos/boxeo.mp4" type="video/mp4">
+                  </video></div></li>
+            </ul>
+        </li>
+    </ul>
+  </div>
+   <p>
+    My hobbies are mostly related with going to the mountain; I love it and also pass time there, with friends or alone. <br>
+    I love to go camping with a tent and sleep there even if its cold. My love for the mountain comes because I am Scout since I was 6 years old, and they took me to the mountains to live this types of experiences since then. <br>
+    Writting about scouts and camping I can't forget about the scouts Summer camps, all the year is a countdown to the 15 of july. <br>
+    </p>
+    <a id="previous">&lt;</a>
+    <a id="next">&gt;</a>
+    <ul class="passed">
+        <li class="changeImg"><img src="../Photos/scouts1.jpg" class="scouts"></li>
+        <li class="changeImg"><img src="../Photos/scouts2.jpg" class="scouts"></li>
+        <li class="changeImg"><img src="../Photos/scouts3.jpg" class="scouts"></li>
+        <li class="changeImg"><img src="../Photos/scouts4.jpg" class="scouts"></li>
+    </ul>
+    
+
+</article>
+
+<article class="articleAboutMe">
+<h2>Contributions</h2>
+<p>For this project I was responsible of all the webpages related with Spain, that includes; Spanish army, Spanish navy, Spanish special Forces, Spanish Air Forces, and the Spanish homepage.
+    For all the pages I tried it to be interactive and mostly visual, that is why i chosse two main colors that are:
+</p>
+<div class="square" id="color1"></div>
+<div class="square" id="color2"></div>
+
+
+
+<h3>Home page</h3>
+<p>
+    The intention is mostly for the user to know the different academys through moving photos, and an interactive map that when you click in one of the pins it goes up to the name of the force.
+</p>
+
+<h3>Different Forces</h3>
+<p>
+    The idea is the same, is through visual content understand better the differnt forces; in this case we started with interactive list that matches the rank with it's correspondent distintive; its followed by 
+    several tables full fill with the name of the materials that each force uses, and when you pass the mouse over the word you can find how that material looks like.<br>
+    Aside this table I puted some news related witht the force that is being seen. <br>
+    Under all the material we can find the information about how to get in. It is explained for all the ranks that you can acced. I am using buttons to make the webpage shorter; so when you clik on the button the information popup. <br>
+    For the last part we have for links to the rest of he forces; and you can notice in wich one you are gettin in because it makes it blush when you pass the mouse over it.
+</p>
+</div>
+</article>
     </section>
     <footer>
         <div class="bg">
-            <!-- <p style="text-align: left;">For more information contact us <a
-                    href=mailto:mouzounis@york.citycollege.eu>Here</a></p> -->
             <div class="container">
                 <div class="button">
                     <p class="sub">Subscribe to our Military Newsletter</p>
@@ -107,10 +169,10 @@
                 </div>
                 <div class="find-us">
                     <p class="contact">Contact Us:</p>
-                    <a href=mailto:mouzounis@york.citycollege.eu><img class="footImg" src="../Photos/mail.jpg"></a>
-                    <a href="https://www.instagram.com/zouzounakis_/" target="_blank"> <img class="footImg"
+                    <a href=mailto:aurbina@york.citycollege.eu><img class="footImg" src="../Photos/mail.jpg"></a>
+                    <a href="https://www.instagram.com/_adaa425/" target="_blank"> <img class="footImg"
                             src="../Photos/Insta.jpg"></a>
-                    <a href="https://www.facebook.com/MariosToZouzouni/" target="_blank"> <img class="footImg"
+                    <a href="https://www.facebook.com/_adaa425/" target="_blank"> <img class="footImg"
                             src="../Photos/facebook.jpg"></a>
                     <a href="tel:2310696969" class="phone-link">2310-696969</a>
                 </div>
@@ -134,6 +196,43 @@
         </div>
     </footer>
     <script>
+var showImg = 0;
+var changeImg = document.getElementsByClassName("changeImg");
+
+for (var i = 0; i < changeImg.length; i++) {
+    console.log(changeImg[i].innerHTML);
+    changeImg[i].style.display = "none";
+}
+
+changeImg[showImg].style.display = "block";
+
+var previousImg = function () {
+    console.log("previous");
+    changeImg[showImg].style.display = "none";
+    showImg--;
+    if (showImg < 0) {
+        showImg = changeImg.length - 1;
+    }
+    changeImg[showImg].style.display = "block";
+}
+
+var previousImgImg = document.getElementById("previous");
+previousImgImg.addEventListener("click", previousImg);
+
+var nextImg = function () {
+    console.log("next");
+    changeImg[showImg].style.display = "none";
+    showImg++;
+    if (showImg == changeImg.length) {
+        showImg = 0;
+    }
+    changeImg[showImg].style.display = "block";
+}
+
+var nextImgImg = document.getElementById("next");
+nextImgImg.addEventListener("click", nextImg);
+
+
         function subAlert() {
             alert("Thanks for Subscribing to our Newsletter");
         }
